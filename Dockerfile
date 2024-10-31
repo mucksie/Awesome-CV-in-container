@@ -31,4 +31,4 @@ RUN apt-get update \
 
 WORKDIR /src
 
-CMD ["make", "resume"]
+CMD ["make"]
