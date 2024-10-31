@@ -1,9 +1,16 @@
 FROM ghcr.io/mucksie/tinytex:0.53
 
-# TeX packages
-# Not included anymore: doi, lastpage, moresize
-# these dependents auto includes: fp, ms, trimspaces
-RUN tlmgr install \
+### install make
+RUN apt-get update \
+ && apt-get install --yes --no-install-recommends \
+    make \
+### clean
+ && apt-get clean \
+ && rm --recursive --force /var/lib/apt/lists/* \
+### TeX packages
+### Not included anymore: doi, lastpage, moresize
+### these dependents auto includes: fp, ms, trimspaces
+ && tlmgr install \
 bookmark \
 enumitem \
 environ \
