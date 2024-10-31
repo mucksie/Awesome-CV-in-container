@@ -11,23 +11,23 @@ RUN apt-get update \
 ### Not included anymore: doi, lastpage, moresize
 ### these dependents auto includes: fp, ms, trimspaces
  && tlmgr install \
-bookmark \
-enumitem \
-environ \
-fancyhdr \
-ifmtarg \
-parskip \
-pgf \
-ragged2e \
-setspace \
-tcolorbox \
-tikzfill \
-xifthen \
-xstring \
-# TeX font packages
-fontawesome5 \
-roboto \
-sourcesanspro
+    bookmark \
+    enumitem \
+    environ \
+    fancyhdr \
+    ifmtarg \
+    parskip \
+    pgf \
+    ragged2e \
+    setspace \
+    tcolorbox \
+    tikzfill \
+    xifthen \
+    xstring \
+### TeX font packages
+    fontawesome5 \
+    roboto \
+    sourcesanspro
 
 WORKDIR /src
 
