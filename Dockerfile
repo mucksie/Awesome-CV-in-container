@@ -1,4 +1,4 @@
-FROM ghcr.io/mucksie/tinytex:0.53
+FROM ghcr.io/mucksie/tinytex:0.54
 
 ### install make
 RUN apt-get update \
